@@ -1,0 +1,73 @@
+/* body {
+    background-color: pink;
+} */
+
+div#calc-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 40vw;
+    background-color: rgb(122, 200, 196);
+    border-radius: 6px;
+}
+
+div#calc-wrapper form table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#calc-wrapper form {
+    padding-top: 5vh;
+    padding-bottom: 5vw;
+}
+
+div#calc-wrapper form table tbody tr td input#num {
+    background-color: rgb(153, 153, 153);
+    opacity: 0.75;
+    border-color: rgb(153, 153, 153);;
+    width: 7vw;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+
+div#calc-wrapper form table tbody tr td input#palette-1 {
+    /* c, = */
+    background-color: rgb(254, 193, 109);
+    border-color: rgb(254, 193, 109);;
+    width: 7vw;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+div#calc-wrapper form table tbody tr td input#palette-2 {
+    /* +, -, /, x  */
+    background-color: rgb(245, 244, 221);
+    border-color: rgb(245, 222, 221);;
+    width: 7vw;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+div#calc-wrapper form table tbody tr td input#palette-3 {
+    /* ^2, ^, (, ) */
+    background-color: rgb(131, 212, 253);
+    border-color: rgb(131, 212, 253);
+    width: 7vw;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+
+div#calc-wrapper form table tbody tr td input#display {
+    background-color: black;
+    border-color: black;
+    color: antiquewhite;
+    opacity: 0.75;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-bottom: 1.5vw;
+}
+
+

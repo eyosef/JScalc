@@ -1,0 +1,61 @@
+<html>
+   <head>
+        <link rel="stylesheet" href="/Users/edenmesfun/hwc/udemy/javascript/vanillaJS/vanillaJSCalc/index.css" >
+   </head>
+   <body>
+       <div id="calc-wrapper">
+            <form name="calculator">
+                    <table>
+                    <tr id="tr-display">
+                        <td colspan="4">
+                            <input type="text" name="display" id="display" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td><input type="button" id="palette-2" class="operator" name="delete" value="." onclick="calculator.display.value += '.'"></td>  
+                            <td><input type="button" id="palette-2" class="operator" name="square-root" value="sqrt" onclick="calculator.display.value = Math.sqrt(calculator.display.value)"></td>
+                            <td><input type="button" id="palette-2" class="operator" name="log" value="log" onclick="calculator.display.value = Math.log(calculator.display.value)"></td>   
+                            <td><input type="button" id="palette-2" class="operator" name="delete" value="DEL" onclick="calculator.display.value = eval(calculator.display.value.slice(0, -1))"></td>                  
+                    </tr>
+                    <tr>
+                            <td><input type="button" id="palette-2" class="operator" name="sine" value="sin" onclick="calculator.display.value = Math.sin(calculator.display.value)"></td>
+                            <td><input type="button" id="palette-2" class="operator" name="cosine" value="cos" onclick="calculator.display.value = Math.cos(calculator.display.value)"></td>
+                            <td><input type="button" id="palette-2" class="operator" name="tangent" value="tan" onclick="calculator.display.value = Math.tan(calculator.display.value)"></td>
+                            <td><input type="button" id="palette-2" class="operator" name="pi" value="pi" onclick="calculator.display.value = Math.PI"></td>
+                    </tr>
+                    <tr>
+                            <td><input type="button" id="palette-3" class="operator" name="squared" value="x^2" onclick="calculator.display.value += '**2'"></td>
+                            <td><input type="button" id="palette-3" class="operator" name="to-the-power" value="x^" onclick="calculator.display.value += '**'"></td>
+                            <td><input type="button" id="palette-3" class="operator" name="open-parenthesis" value="(" onclick="calculator.display.value += '('"></td>
+                            <td><input type="button" id="palette-3" class="operator" name="closed-parenthesis" value=")" onclick="calculator.display.value += ')'"></td>
+                    </tr>
+                    <tr>
+                            <td><input type="button" id="num" value="1" onclick="calculator.display.value += '1'"></td>
+                            <td><input type="button" id="num" value="2" onclick="calculator.display.value += '2'"></td>
+                            <td><input type="button" id="num" value="3" onclick="calculator.display.value += '3'"></td>
+                            <td><input type="button" id="palette-2" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+                    </tr>
+                    <tr>
+                            <td id="num"><input type="button" id="num" value="4" onclick="calculator.display.value += '4'"></td>
+                            <td><input type="button" id="num" value="5" onclick="calculator.display.value += '5'"></td>
+                            <td><input type="button" id="num" value="6" onclick="calculator.display.value += '6'"></td>
+                            <td><input type="button" id="palette-2" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+                    </tr>
+                    <tr>
+                            <td><input type="button" id="num" value="7" onclick="calculator.display.value += '7'"></td>
+                            <td><input type="button" id="num" value="8" onclick="calculator.display.value += '8'"></td>
+                            <td><input type="button" id="num" value="9" onclick="calculator.display.value += '9'"></td>
+                            <td><input type="button"  id="palette-2" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+                    </tr>
+                    <tr>
+                            <td><input type="button" id="palette-1" value="c" onclick="calculator.display.value = ''"></td>
+                            <td><input type="button" id="num" value="0" onclick="calculator.display.value += '0'"></td>
+                            <td><input type="button" id="palette-1" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+                            <td><input type="button"  id="palette-2" class="operator" value="/" onclick="calculator.display.value += '/'"></td>
+                    
+                    </tr>
+                    </table>
+                </form>
+        </div>
+   </body>
+</html>
